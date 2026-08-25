@@ -1,0 +1,54 @@
+---
+layout: default
+title: Home
+---
+{% capture newline %}
+{% endcapture %}
+<section class="hero">
+  <h1 class="serif">Hi, I'm João.</h1>
+  <p class="serif intro">
+    I hold a Master's in Computer Science, and I'm looking to contribute to the field of
+    Artificial Intelligence. Mostly, I want to make models less opaque and more
+    interpretable, especially in medicine. I like to think that by looking inside these
+    machines, we get a glimpse into our own minds too.
+  </p>
+</section>
+
+<section class="selected-work">
+  <h2 class="section-title">Projects</h2>
+  <div class="rule" style="margin-bottom: 24px;"></div>
+  {% assign highlighted_projects = site.data.projects.items | where_exp: 'item', 'item.highlight' | sort: 'start' | reverse %}
+  {% for item in highlighted_projects %}
+    <div class="mini-item">
+      <div class="mini-title">{{ item.title }}</div>
+      <p class="mini-desc">{{ item.description }}</p>
+    </div>
+  {% endfor %}
+  <a href="{{ '/projects/' | relative_url }}" class="link-more">all projects →</a>
+</section>
+
+<section class="selected-work">
+  <h2 class="section-title">Publications</h2>
+  <div class="rule" style="margin-bottom: 24px;"></div>
+  {% assign highlighted_pubs = site.data.publications.items | where_exp: 'item', 'item.highlight' | sort: 'year' | reverse %}
+  {% for item in highlighted_pubs %}
+    <div class="mini-item">
+      <div class="mini-title">{{ item.title }}</div>
+      <p class="mini-desc">{{ item.venue }}</p>
+    </div>
+  {% endfor %}
+  <a href="{{ '/publications/' | relative_url }}" class="link-more">all publications →</a>
+</section>
+
+<section class="notes-preview">
+  <h2 class="section-title">Recent notes</h2>
+  <div class="rule"></div>
+  {% for post in site.posts limit: 3 %}
+    <article class="note-row">
+      <div class="note-date">{{ post.date | date: "%d %b %Y" }}</div>
+      <a href="{{ post.url | relative_url }}" class="serif note-title">{{ post.title }}</a>
+      <p class="note-excerpt">{{ post.excerpt | strip_html | replace: newline, " " | strip | truncate: 150 }}</p>
+    </article>
+  {% endfor %}
+  <p style="padding-top: 22px;"><a href="{{ '/notes/' | relative_url }}" class="link-more">all notes →</a></p>
+</section>

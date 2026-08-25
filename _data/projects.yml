@@ -1,0 +1,42 @@
+items:
+  - title: WASPI
+    description: >
+      An agentic LLM platform for equipment integrity and reliability analysis in the
+      energy sector — reasoning over knowledge graphs built from maintenance records.
+    start: 2026
+    highlight: true
+  - title: ELLME
+    description: >
+      A large language model project addressing bias and equity in healthcare, developed
+      with Hospital Israelita Albert Einstein for Brazilian sociodemographic realities.
+    start: 2025
+    highlight: true
+  - title: "AI for Public-Sector Decisions (IBAMA)"
+    description: >
+      Researching AI-supported decision-making for Brazil's environmental agency, in
+      partnership with the University of Brasília — governance and the public interest.
+    start: 2026
+  - title: ProtoRADIAR
+    description: >
+      NLP methods for capturing and disseminating knowledge locked in oil & gas drilling
+      reports — turning unstructured logs into structured, searchable insight.
+    start: 2023
+    end: 2026
+  - title: Aedromo
+    description: >
+      Reinforcement learning and computer vision for control of a small differential-drive
+      robot used in robotics teaching.
+    start: 2020
+    end: 2021
+  - title: Carrossel Caipira
+    description: >
+      UNESP's Very Small Size robot soccer team — computer vision, control and embedded
+      systems, competing nationally since 1998.
+    start: 2019
+    end: 2022
+  - title: "Multi-level Representations for Multimedia Recognition"
+    description: >
+      Undergraduate research comparing representations for multimedia recognition tasks
+      across video and image data.
+    start: 2021
+    end: 2022

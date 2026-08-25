@@ -1,0 +1,25 @@
+---
+layout: default
+title: Notes
+permalink: /notes/
+---
+{% capture newline %}
+{% endcapture %}
+<section class="page-header">
+  <p class="mono caps eyebrow">Writing</p>
+  <h1 class="serif" style="font-size: 44px; font-weight: 500; margin: 0 0 16px;">Notes</h1>
+  <p class="intro">A bit of everything, mostly the stuff that won't leave me alone until I write it down.</p>
+</section>
+
+<div class="notes-index">
+  <div class="rule"></div>
+  {% for post in site.posts %}
+    <article class="note-row large">
+      <div class="note-date">{{ post.date | date: "%d %b %Y" }}</div>
+      <a href="{{ post.url | relative_url }}" class="serif note-title">{{ post.title }}</a>
+      <p class="note-excerpt">{{ post.excerpt | strip_html | replace: newline, " " | strip | truncate: 200 }}</p>
+    </article>
+  {% else %}
+    <p class="note-excerpt" style="padding: 26px 0;">Nothing published yet — check back soon.</p>
+  {% endfor %}
+</div>

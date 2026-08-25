@@ -1,0 +1,46 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<section class="page-header">
+  <p class="mono caps eyebrow">Projects</p>
+  <h1 class="serif" style="font-size: 44px; font-weight: 500; margin: 0 0 16px;">What I'm working on</h1>
+  <p class="intro">A running log of things I've built or broken along the way.</p>
+</section>
+
+<div class="projects">
+  <div class="mono caps kicker" style="margin-bottom: 8px;">Ongoing</div>
+  <div class="rule"></div>
+  {% assign group = site.data.projects.items | where_exp: 'item', 'item.end == nil' | sort: 'start' | reverse %}
+  {% assign highlighted = group | where_exp: 'item', 'item.highlight' %}
+  {% assign rest = group | where_exp: 'item', 'item.highlight != true' %}
+  {% assign ordered = highlighted | concat: rest %}
+  {% for item in ordered %}
+    <div class="project-row{% if item.highlight %} highlight{% endif %}">
+      <div class="project-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</div>
+      <div class="project-body">
+        <div class="project-title">{{ item.title }}</div>
+        <p class="project-desc">{{ item.description }}</p>
+      </div>
+      <div class="project-status">Ongoing<br>since {{ item.start }}</div>
+    </div>
+  {% endfor %}
+
+  <div class="mono caps kicker spaced" style="margin: 48px 0 8px;">Past</div>
+  <div class="rule"></div>
+  {% assign group = site.data.projects.items | where_exp: 'item', 'item.end != nil' | sort: 'start' | reverse %}
+  {% assign highlighted = group | where_exp: 'item', 'item.highlight' %}
+  {% assign rest = group | where_exp: 'item', 'item.highlight != true' %}
+  {% assign ordered = highlighted | concat: rest %}
+  {% for item in ordered %}
+    <div class="project-row{% if item.highlight %} highlight{% endif %}">
+      <div class="project-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</div>
+      <div class="project-body">
+        <div class="project-title">{{ item.title }}</div>
+        <p class="project-desc">{{ item.description }}</p>
+      </div>
+      <div class="project-status">{{ item.start }}–{{ item.end }}</div>
+    </div>
+  {% endfor %}
+</div>

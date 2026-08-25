@@ -1,0 +1,42 @@
+title: "João Vitor Mariano Correia"
+description: "Notes on NLP, knowledge graphs, LLMs, and robotics."
+url: "https://joaovmcorreia.github.io"
+
+# Fully custom design below — explicitly opt out of github-pages' default
+# "jekyll-theme-primer" fallback theme.
+theme: null
+
+author:
+  name: "João Vitor Mariano Correia"
+  email: "joaovitormarianocorreia@gmail.com"
+  linkedin: "https://www.linkedin.com/in/joaovmcorreia/"
+  github: "https://github.com/joaovmcorreia"
+  orcid: "https://orcid.org/0000-0002-2614-0197"
+  lattes: "https://lattes.cnpq.br/3089028857364524"
+  scholar: "https://scholar.google.com.br/citations?user=lWN2t8UAAAAJ&hl=pt-BR"
+
+markdown: kramdown
+permalink: /notes/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

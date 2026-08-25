@@ -1,0 +1,45 @@
+items:
+  - title: "The Bode Family of Large Language Models: Investigating the Frontiers of LLMs in Brazilian Portuguese"
+    authors: "Paiola, P. H.; Garcia, G. L.; <strong>Correia, J. V. M.</strong>; Manesco, J. R. R.; Garcia, A. L.; Papa, J. P."
+    venue: "Journal of the Brazilian Computer Society · 2025"
+    url: "https://journals-sol.sbc.org.br/index.php/jbcs/article/view/5812"
+    type: journal_article
+    year: 2025
+    highlight: true
+  - title: "Analysis of Automated Document Relevance Annotation for Information Retrieval in Oil and Gas Industry"
+    authors: "<strong>Correia, J. V. M.</strong>; Bell, M.; Amorim, J. V. R. et al."
+    venue: "Proceedings of EMNLP 2025 — Industry Track"
+    url: "https://aclanthology.org/2025.emnlp-industry.132/"
+    type: conference_paper
+    year: 2025
+    highlight: true
+  - title: "Class of LLMs: Benchmarking Large Language Models on the Brazilian National Medical Examination"
+    authors: "<strong>Correia, J. V. M.</strong>; Castro, P. H. A.; Garcia, G. L.; Paiola, P. H.; Papa, J. P."
+    venue: "Proceedings of PROPOR 2026"
+    url: "https://aclanthology.org/2026.propor-2.17/"
+    type: conference_paper
+    year: 2026
+  - title: "Retrieval-Augmented Generation for Clinical Question Answering in Portuguese: Benefits and Limitations"
+    authors: "Garcia, G. L.; Paiola, P. H.; <strong>Correia, J. V. M.</strong>; Rodrigues, D.; Papa, J. P."
+    venue: "Proceedings of PROPOR 2026"
+    url: "https://aclanthology.org/2026.propor-2.18/"
+    type: conference_paper
+    year: 2026
+  - title: "RecognaSumm: A Novel Brazilian Summarization Dataset"
+    authors: "Paiola, P. H.; Garcia, G. L.; Jodas, D. S.; <strong>Correia, J. V. M.</strong>; Sugi, L. A.; Papa, J. P."
+    venue: "Proceedings of PROPOR 2024"
+    url: "https://aclanthology.org/2024.propor-1.63/"
+    type: conference_paper
+    year: 2024
+  - title: "Treinamento de Grandes Modelos de Linguagem na Prática"
+    authors: "<strong>Correia, J. V. M.</strong>; Manesco, J. R. R.; Jodas, D. S.; Rodrigues, D.; Papa, J. P."
+    venue: "In: Processamento de Linguagem Natural (ed. 4) · 2026"
+    url: "https://brasileiraspln.ufscar.br/livro-pln-4ed-vol2/modelos/cap-modelos-pratica/cap-modelos-pratica.html"
+    type: book_chapter
+    year: 2026
+  - title: "Sumarização Automática"
+    authors: "Souza, J. W. C.; Cardoso, P. C. F.; Paixao, C. A.; Paiola, P. H.; Garcia, G. L.; <strong>Correia, J. V. M.</strong> et al."
+    venue: "In: Processamento de Linguagem Natural (ed. 4) · 2026"
+    url: "https://brasileiraspln.ufscar.br/livro-pln-4ed-vol3/aplicacoes-e-dominios/cap-as/cap-as.html"
+    type: book_chapter
+    year: 2026
