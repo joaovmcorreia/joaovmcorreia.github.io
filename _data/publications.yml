@@ -25,6 +25,19 @@ items:
     url: "https://aclanthology.org/2026.propor-2.18/"
     type: conference_paper
     year: 2026
+  - title: "Faithfulness and Uncertainty Calibration of Large Language Models in Portuguese Medical Question Answering"
+    authors: "<strong>Correia, J. V. M.</strong>; Manesco, J. R. R.; Garcia, G. L.; Tunes, G. C.; Bittencourt, J. A. S.; Pereira, A. J.; Papa, J. P."
+    venue: "2026 IEEE 39th International Symposium on Computer-Based Medical Systems (CBMS)"
+    url: "https://ieeexplore.ieee.org/abstract/document/11718444"
+    type: conference_paper
+    year: 2026
+    highlight: true
+  - title: "Enhancing Brazilian Portuguese Small Visual Language Models Through Progressive Learning for Torax X-Ray Analysis"
+    authors: "Garcia, G. L.; Passos, L. A; Manesco, J. R. R.; Paiola, P. H.; <strong>Correia, J. V. M.</strong>; Papa, J. P."
+    venue: "2026 IEEE 39th International Symposium on Computer-Based Medical Systems (CBMS)"
+    url: "https://ieeexplore.ieee.org/abstract/document/11718081"
+    type: conference_paper
+    year: 2026
   - title: "RecognaSumm: A Novel Brazilian Summarization Dataset"
     authors: "Paiola, P. H.; Garcia, G. L.; Jodas, D. S.; <strong>Correia, J. V. M.</strong>; Sugi, L. A.; Papa, J. P."
     venue: "Proceedings of PROPOR 2024"
